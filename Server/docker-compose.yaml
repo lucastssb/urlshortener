@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  db:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    ports:
+      - "27017:27017"
+    networks:
+      - app_network
+    volumes:
+      - ./mongo-volume:/data/db
+  app:
+    build: .
+    depends_on:
+      - db
+    ports:
+      - "8080:8080"
+    networks:
+      - app_network
+
+networks:
+  app_network:

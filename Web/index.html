@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Url-Shortener</title>
+  </head>
+  <body>
+    <header class="header"><h1>Url-Shortener</h1></header>
+    <main class="main">
+      <form onSubmit="onSubmitHandler(event);" id="url-form" class="form-container">
+        <span id="title">Type the url you want to shorten</span>
+        <input id="url-input" type="text" name="url" placeholder="URL" />
+        <div class="response-box invisible" id="response-box">
+          <span id="response" class="invisible"></span>
+        </div>
+        <button id="submit-button" type="submit"> > </button>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
