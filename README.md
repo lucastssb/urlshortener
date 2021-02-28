@@ -68,7 +68,7 @@ If everything worked out you will get the following response from the server
     "urlShorten": "/XVlBzg"
 }
 ```
-### To run the web page just go to the folder "urlshotener/Web" and open the "index.html" file on your web browser.
+### To run the web page just go into the folder "urlshotener/Web" and open the "index.html" file on your web browser.
 
 <br>
 
